@@ -27,14 +27,14 @@ public class Ingreso {
 
 
     @ManyToOne
-    @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario", nullable = false)
+    @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario")
     private Usuario idUsuario;
 
     @ManyToOne
-    @JoinColumn(name = "idCategoria", referencedColumnName = "idCategoria", nullable = false)
+    @JoinColumn(name = "idCategoria", referencedColumnName = "idCategoria")
     private Categoria idCategoria;
 
     @ManyToOne
-    @JoinColumn(name = "idMetodoPago", referencedColumnName = "idMetodoPago", nullable = false)
+    @JoinColumn(name = "idMetodoPago", referencedColumnName = "idMetodoPago")
     private MetodoPago idMetodoPago;
 }

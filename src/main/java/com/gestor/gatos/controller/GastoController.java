@@ -89,7 +89,10 @@ public class GastoController {
                                         @RequestParam String fechadesde,
                                         @RequestParam String fechahasta) {
         Double gastos = service.totalGastos(username, fechadesde, fechahasta);
+        gastos = (gastos != null) ? gastos : 0.0;
+
         Double ingresos = serviceIngresos.totalIngresos(username, fechadesde, fechahasta);
+        ingresos = (ingresos != null) ? ingresos : 0.0;
         return ResponseEntity.ok(ingresos - gastos);
     }
 }

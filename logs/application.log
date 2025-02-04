@@ -1,374 +1,51 @@
-2025-01-10T04:56:15.707-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 54208 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T04:56:15.716-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T04:56:15.824-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-10T04:56:15.827-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-10T04:56:17.242-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T04:56:17.325-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
-2025-01-10T04:56:18.272-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T04:56:18.293-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-10T04:56:18.294-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-10T04:56:18.364-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-10T04:56:18.364-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2536 ms
-2025-01-10T04:56:18.644-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T04:56:18.765-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2025-01-10T04:56:18.823-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T04:56:19.234-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T04:56:19.294-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-10T04:56:30.380-05:00  WARN 54208 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08001
-2025-01-10T04:56:30.381-05:00 ERROR 54208 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : El intento de conexión falló.
-2025-01-10T04:56:30.383-05:00  WARN 54208 --- [Gestor de Gastos] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
-
-org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [El intento de conexión falló.] [n/a]
-	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
-	at com.gestor.gatos.GatosApplication.main(GatosApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
-Caused by: org.postgresql.util.PSQLException: El intento de conexión falló.
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:42.7.4]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	... 40 common frames omitted
-Caused by: java.net.SocketTimeoutException: Connect timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
-	at org.postgresql.core.PGStream.createSocket(PGStream.java:260) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.core.PGStream.<init>(PGStream.java:121) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140) ~[postgresql-42.7.4.jar:42.7.4]
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268) ~[postgresql-42.7.4.jar:42.7.4]
-	... 54 common frames omitted
-
-2025-01-10T04:56:30.396-05:00 ERROR 54208 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-2025-01-10T04:56:30.398-05:00  WARN 54208 --- [Gestor de Gastos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-2025-01-10T04:56:30.400-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-01-10T04:56:30.417-05:00  INFO 54208 --- [Gestor de Gastos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-01-10T04:56:30.429-05:00 ERROR 54208 --- [Gestor de Gastos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
-	at com.gestor.gatos.GatosApplication.main(GatosApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
-	... 20 common frames omitted
-Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	... 35 common frames omitted
-
-2025-01-10T05:28:03.249-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 34504 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T05:28:03.253-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T05:28:03.302-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-10T05:28:03.302-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-10T05:28:03.943-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T05:28:04.012-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
-2025-01-10T05:28:04.542-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T05:28:04.602-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1299 ms
-2025-01-10T05:28:04.712-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T05:28:04.773-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2025-01-10T05:28:04.804-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T05:28:05.039-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T05:28:05.070-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-10T05:28:06.328-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33ba0110
-2025-01-10T05:28:06.328-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-10T05:28:06.784-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-02-03T19:45:54.606-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 10560 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
+2025-02-03T19:45:54.612-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T19:45:54.664-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-03T19:45:54.664-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-03T19:45:55.341-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T19:45:55.403-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2025-02-03T19:45:55.833-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-03T19:45:55.842-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T19:45:55.843-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T19:45:55.886-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-03T19:45:55.887-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2025-02-03T19:45:55.992-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T19:45:56.032-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-03T19:45:56.060-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T19:45:56.316-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T19:45:56.343-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T19:45:57.705-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29c7361c
+2025-02-03T19:45:57.710-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T19:45:58.229-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
-	Database version: 15.10
+	Database version: 16.6
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-01-10T05:28:07.682-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-10T05:28:09.931-05:00  INFO 34504 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T05:28:14.483-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 23164 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T05:28:14.485-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T05:28:14.538-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-10T05:28:14.538-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-10T05:28:15.179-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T05:28:15.255-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
-2025-01-10T05:28:15.719-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T05:28:15.728-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-10T05:28:15.729-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-10T05:28:15.775-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-10T05:28:15.776-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1238 ms
-2025-01-10T05:28:15.882-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T05:28:15.926-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2025-01-10T05:28:15.955-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T05:28:16.207-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T05:28:16.237-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-10T05:28:17.250-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20befc82
-2025-01-10T05:28:17.256-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-10T05:28:17.706-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.10
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-10T05:28:18.503-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-10T05:28:20.698-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T05:28:21.003-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-01-10T05:28:23.042-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-10T05:28:23.076-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-01-10T05:28:23.086-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Started GatosApplication in 9.03 seconds (process running for 9.749)
-2025-01-10T06:09:51.010-05:00  INFO 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-10T06:09:51.025-05:00  INFO 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-10T06:09:51.025-05:00  INFO 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-10T06:09:51.198-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:09:51.946-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-3] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:09:52.171-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-4] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:09:52.383-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-6] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:07.898-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-2] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:14.498-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:14.929-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-8] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:34.019-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-9] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:41.665-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-10] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:13:42.522-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:23.113-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-4] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:44.878-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-6] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:53.040-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:53.230-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-2] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:53.425-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:53.621-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-8] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:53.814-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-9] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:54.008-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-10] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:15:54.198-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:16:02.902-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-3] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:16:43.185-05:00 DEBUG 23164 --- [Gestor de Gastos] [http-nio-8080-exec-4] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:18:34.768-05:00  INFO 23164 --- [Gestor de Gastos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-01-10T06:18:34.771-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-10T06:18:35.105-05:00  INFO 23164 --- [Gestor de Gastos] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-10T06:18:35.111-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:18:35.115-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-10T06:18:36.055-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-10T06:18:36.158-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 23164 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T06:18:36.158-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T06:18:36.290-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T06:18:36.309-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
-2025-01-10T06:18:36.396-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T06:18:36.397-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-10T06:18:36.397-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-10T06:18:36.414-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-10T06:18:36.414-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 255 ms
-2025-01-10T06:18:36.446-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T06:18:36.449-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T06:18:36.462-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T06:18:36.463-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-01-10T06:18:37.235-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@632496dd
-2025-01-10T06:18:37.236-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-01-10T06:18:37.608-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 15.10
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-10T06:18:37.721-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-10T06:18:39.720-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:18:41.535-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-10T06:18:41.547-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-01-10T06:18:41.552-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Started GatosApplication in 5.416 seconds (process running for 3028.16)
-2025-01-10T06:18:41.554-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-01-10T06:18:42.965-05:00  INFO 23164 --- [Gestor de Gastos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-01-10T06:18:42.966-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-10T06:18:43.448-05:00  INFO 23164 --- [Gestor de Gastos] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-10T06:18:43.452-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:18:43.452-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-01-10T06:18:44.380-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-01-10T06:18:44.456-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 23164 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T06:18:44.456-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T06:18:44.606-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T06:18:44.628-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
-2025-01-10T06:18:44.787-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T06:18:44.788-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-10T06:18:44.788-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-10T06:18:44.808-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-10T06:18:44.809-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 350 ms
-2025-01-10T06:18:44.838-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T06:18:44.841-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T06:18:44.847-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T06:18:44.848-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-01-10T06:18:45.624-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1ec5c450
-2025-01-10T06:18:45.624-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-01-10T06:18:46.001-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 15.10
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-10T06:18:46.155-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-10T06:18:48.148-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:18:49.827-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-10T06:18:49.841-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-01-10T06:18:49.849-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Started GatosApplication in 5.412 seconds (process running for 3036.455)
-2025-01-10T06:18:49.851-05:00  INFO 23164 --- [Gestor de Gastos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-01-10T06:18:52.273-05:00  INFO 23164 --- [Gestor de Gastos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-01-10T06:18:52.274-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-01-10T06:18:52.620-05:00  INFO 23164 --- [Gestor de Gastos] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-01-10T06:18:52.621-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:18:52.622-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-01-10T06:18:53.553-05:00  INFO 23164 --- [Gestor de Gastos] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2025-01-10T06:18:56.161-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Starting GatosApplication using Java 17.0.8 with PID 34752 (D:\UNIVERSITARIO\AppNube\gastos\target\classes started by Arkadyan in D:\UNIVERSITARIO\AppNube\gastos)
-2025-01-10T06:18:56.165-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-01-10T06:18:56.216-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-01-10T06:18:56.216-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-01-10T06:18:56.800-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-10T06:18:56.873-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 5 JPA repository interfaces.
-2025-01-10T06:18:57.348-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-01-10T06:18:57.358-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-10T06:18:57.359-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-01-10T06:18:57.404-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-10T06:18:57.404-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
-2025-01-10T06:18:57.514-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-10T06:18:57.557-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2025-01-10T06:18:57.586-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-10T06:18:57.841-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-10T06:18:57.874-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-10T06:18:58.851-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21be00b1
-2025-01-10T06:18:58.853-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-10T06:18:59.306-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.10
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-01-10T06:19:00.116-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-10T06:19:02.277-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-10T06:19:02.678-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-01-10T06:19:04.684-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-01-10T06:19:04.726-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-01-10T06:19:04.732-05:00  INFO 34752 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Started GatosApplication in 9.067 seconds (process running for 9.797)
-2025-01-10T06:19:27.535-05:00  INFO 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-10T06:19:27.535-05:00  INFO 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-10T06:19:27.536-05:00  INFO 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-10T06:19:27.748-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:19:52.324-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-2] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:20:31.831-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : SELECT g.* FROM gasto g JOIN usuario u ON g.id_usuario = u.id_usuario WHERE u.username =? AND DATE_TRUNC('day', g.fecha) BETWEEN DATE_TRUNC('day', CAST(? AS TIMESTAMP)) AND DATE_TRUNC('day', CAST(? AS TIMESTAMP))
-2025-01-10T06:20:31.944-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : select c1_0.id_categoria,c1_0.descripcion,c1_0.nombre,c1_0.tipo from categoria c1_0 where c1_0.id_categoria=?
-2025-01-10T06:20:32.052-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : select mp1_0.id_metodo_pago,mp1_0.nombre from metodo_pago mp1_0 where mp1_0.id_metodo_pago=?
-2025-01-10T06:20:32.143-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id_usuario,u1_0.email,u1_0.fecha_creacion,u1_0.password,u1_0.username from usuario u1_0 where u1_0.id_usuario=?
-2025-01-10T06:20:32.242-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : select c1_0.id_categoria,c1_0.descripcion,c1_0.nombre,c1_0.tipo from categoria c1_0 where c1_0.id_categoria=?
-2025-01-10T06:20:32.345-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : select mp1_0.id_metodo_pago,mp1_0.nombre from metodo_pago mp1_0 where mp1_0.id_metodo_pago=?
-2025-01-10T06:20:34.705-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : SELECT g.* FROM gasto g JOIN usuario u ON g.id_usuario = u.id_usuario WHERE u.username =? AND DATE_TRUNC('day', g.fecha) BETWEEN DATE_TRUNC('day', CAST(? AS TIMESTAMP)) AND DATE_TRUNC('day', CAST(? AS TIMESTAMP))
-2025-01-10T06:20:34.812-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : select c1_0.id_categoria,c1_0.descripcion,c1_0.nombre,c1_0.tipo from categoria c1_0 where c1_0.id_categoria=?
-2025-01-10T06:20:34.932-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : select mp1_0.id_metodo_pago,mp1_0.nombre from metodo_pago mp1_0 where mp1_0.id_metodo_pago=?
-2025-01-10T06:20:35.032-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id_usuario,u1_0.email,u1_0.fecha_creacion,u1_0.password,u1_0.username from usuario u1_0 where u1_0.id_usuario=?
-2025-01-10T06:20:35.123-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : select c1_0.id_categoria,c1_0.descripcion,c1_0.nombre,c1_0.tipo from categoria c1_0 where c1_0.id_categoria=?
-2025-01-10T06:20:35.217-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : select mp1_0.id_metodo_pago,mp1_0.nombre from metodo_pago mp1_0 where mp1_0.id_metodo_pago=?
-2025-01-10T06:21:00.040-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-8] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:21:55.178-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:23:06.662-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-3] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:23:15.063-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-4] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:23:49.520-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:24:40.083-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-7] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:27:48.800-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-8] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:27:51.828-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-1] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:36:14.230-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-3] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:36:26.505-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-4] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:36:59.633-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-5] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:37:38.373-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-6] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:38:21.859-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-10] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:47:53.630-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-8] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
-2025-01-10T06:49:03.155-05:00 DEBUG 34752 --- [Gestor de Gastos] [http-nio-8080-exec-2] org.hibernate.SQL                        : SELECT id_usuario, email, fecha_creacion, null password, username FROM usuario WHERE username =?   AND password =? 
+2025-02-03T19:45:59.021-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T19:45:59.499-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : create table categoria (id_categoria varchar(255) not null, descripcion varchar(255), nombre varchar(255) not null, tipo varchar(255) not null, primary key (id_categoria))
+2025-02-03T19:45:59.626-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : create table gasto (id_gasto bigint generated by default as identity, descripcion varchar(255), fecha timestamp(6) not null, monto float(53) not null, id_categoria varchar(255), id_metodo_pago varchar(255), id_usuario bigint, primary key (id_gasto))
+2025-02-03T19:45:59.740-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : create table ingreso (id_ingreso bigint generated by default as identity, descripcion varchar(255), fecha timestamp(6) not null, monto float(53) not null, id_categoria varchar(255), id_metodo_pago varchar(255), id_usuario bigint, primary key (id_ingreso))
+2025-02-03T19:45:59.851-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : create table metodo_pago (id_metodo_pago varchar(255) not null, nombre varchar(255) not null, primary key (id_metodo_pago))
+2025-02-03T19:45:59.963-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : create table usuario (id_usuario bigint generated by default as identity, email varchar(255), fecha_creacion timestamp(6), password varchar(255) not null, username varchar(255) not null, primary key (id_usuario))
+2025-02-03T19:46:00.075-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists usuario drop constraint if exists UK5171l57faosmj8myawaucatdw
+2025-02-03T19:46:00.178-05:00  WARN 10560 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-02-03T19:46:00.180-05:00  WARN 10560 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk5171l57faosmj8myawaucatdw" of relation "usuario" does not exist, skipping
+2025-02-03T19:46:00.180-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists usuario add constraint UK5171l57faosmj8myawaucatdw unique (email)
+2025-02-03T19:46:00.288-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists usuario drop constraint if exists UK863n1y3x0jalatoir4325ehal
+2025-02-03T19:46:00.390-05:00  WARN 10560 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-02-03T19:46:00.391-05:00  WARN 10560 --- [Gestor de Gastos] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk863n1y3x0jalatoir4325ehal" of relation "usuario" does not exist, skipping
+2025-02-03T19:46:00.391-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists usuario add constraint UK863n1y3x0jalatoir4325ehal unique (username)
+2025-02-03T19:46:00.498-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists gasto add constraint FKlxqxttxtelqep3htknhtj6wm0 foreign key (id_categoria) references categoria
+2025-02-03T19:46:00.604-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists gasto add constraint FKibwdqs0uwyyyy5rt9t4hlc5tm foreign key (id_metodo_pago) references metodo_pago
+2025-02-03T19:46:00.711-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists gasto add constraint FKak9e83ejjwpfwh70x0dy9tuve foreign key (id_usuario) references usuario
+2025-02-03T19:46:00.813-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists ingreso add constraint FK2q1wdd8j970wjodkyluh8ug2r foreign key (id_categoria) references categoria
+2025-02-03T19:46:00.924-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists ingreso add constraint FK4si22k76di5uqbc6kcs93tvum foreign key (id_metodo_pago) references metodo_pago
+2025-02-03T19:46:01.029-05:00 DEBUG 10560 --- [Gestor de Gastos] [restartedMain] org.hibernate.SQL                        : alter table if exists ingreso add constraint FKn28s7pm6d59wb7245dys9j0ti foreign key (id_usuario) references usuario
+2025-02-03T19:46:01.140-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T19:46:01.395-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T19:46:03.485-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-03T19:46:03.519-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-03T19:46:03.528-05:00  INFO 10560 --- [Gestor de Gastos] [restartedMain] com.gestor.gatos.GatosApplication        : Started GatosApplication in 9.307 seconds (process running for 10.65)
